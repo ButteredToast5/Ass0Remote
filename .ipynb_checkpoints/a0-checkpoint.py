@@ -8,7 +8,12 @@
 # Julietw2@uci.edu
 # 65183805
 def main():
-    print("hello testing git")
-
+    #user input
+    n = int(input())
+    def pattern():
+        for i in range(1,n):
+            print("+-+\n| |\n+-+")
+    pattern()
 if __name__ == "__main__":
     main()
+    
