@@ -7,4 +7,9 @@
 # Juliet Wang
 # Julietw2@uci.edu
 # 65183805
+def main():
+    print("hello testing git")
 
+if __name__ == "__main__":
+    main()
+    
