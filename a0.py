@@ -8,7 +8,8 @@
 # Julietw2@uci.edu
 # 65183805
 def main():
-    print("hello testing git")
+    n = int(input())
+    
 
 if __name__ == "__main__":
     main()
