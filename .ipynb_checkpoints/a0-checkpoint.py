@@ -10,18 +10,22 @@
 
 #main method
 def main():
-    #user input
+    #user input #of rectangles
     n = int(input())
+    
     #draws rectangles
     def pattern():
+        #start of top rectangle
+        print("+-+")
+        
         #loops based on input of # of rectangles
         for i in range(n):
             #indents based on i 
-            ind = " " * i 
-            #prints shape
-            print(ind + "+-+")
+            ind = "  " * i
+            #prints rest of shape
             print(ind + "| |")
             print(ind + "+-+")
+            
     pattern()
 
 if __name__ == "__main__":

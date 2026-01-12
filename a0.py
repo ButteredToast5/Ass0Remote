@@ -13,16 +13,15 @@ def main():
     #user input #of rectangles
     n = int(input())
     
-    #indents based on i 
-    ind = " " * i 
-    
     #draws rectangles
     def pattern():
         #start of top rectangle
-        print(ind + "+-+")
+        print("+-+")
         
         #loops based on input of # of rectangles
         for i in range(n):
+            #indents based on i 
+            ind = "  " * i
             #prints rest of shape
             print(ind + "| |")
             print(ind + "+-+")
