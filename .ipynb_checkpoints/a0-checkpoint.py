@@ -29,9 +29,9 @@ def main():
 
     #checks and prints row based on if its part of a rectangle or if its the last line of the last rectangle.
             if i == n - 1:
-                print(ind + "+-+-+")#all tops of rectangles
-            else:
                 print(ind + "+-+")#last line/base of last rectangle
+            else:
+                print(ind + "+-+-+")#all tops of rectangles
                 
     #run pattern method
     pattern()
