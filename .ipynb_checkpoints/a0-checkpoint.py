@@ -15,6 +15,7 @@ def main():
     
     #draws rectangles
     def pattern():
+        
         #start of top rectangle
         print("+-+")
         
@@ -22,10 +23,17 @@ def main():
         for i in range(n):
             #indents based on i 
             ind = "  " * i
+            
             #prints rest of shape
             print(ind + "| |")
-            print(ind + "+-+")
-            
+
+    #checks and prints row based on if its part of a rectangle or if its the last line of the last rectangle.
+            if i == n - 1:
+                print(ind + "+-+-+")#all tops of rectangles
+            else:
+                print(ind + "+-+")#last line/base of last rectangle
+                
+    #run pattern method
     pattern()
 
 if __name__ == "__main__":
