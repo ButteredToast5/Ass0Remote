@@ -15,6 +15,9 @@ def main():
     
     #draws rectangles
     def pattern():
+        #checks if the the program reached the bottom of the last rectangle as a boolean
+        lastrow = False
+        
         #start of top rectangle
         print("+-+")
         
@@ -24,8 +27,13 @@ def main():
             ind = "  " * i
             #prints rest of shape
             print(ind + "| |")
-            print(ind + "+-+")
-            
+
+            #checks if the the program reached the bottom of the last rectangle
+            while lastrow == False:
+                print(ind + "+-+-+")
+                    if lastrow  == True:
+                        print(ind + "+-+")
+    #run pattern method
     pattern()
 
 if __name__ == "__main__":
